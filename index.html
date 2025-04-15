@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsLeller</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body class="w-full h-screen flex flex-col items-center justify-center bg-black text-white  ">
+    <div class="w-[869px] h-[350px] bg-[#131213] flex flex-col items-center justify-center  gap-5 rounded-2xl ">
+        <h1 class="text-4xl font-bold bg-clip-text text-transparent"
+            style="background-image: linear-gradient(to right, var(--color-textOne), var(--color-textTwo), var(--color-textThree))">
+            Quer se manter atualizado?</h1>
+        <h2 class="text-4xl font-bold bg-clip-text text-transparent"
+            style="background-image: linear-gradient(to right, var(--color-textOne), var(--color-textTwo), var(--color-textThree))">
+            Se inscreva na nossa newsletter.</h2>
+        <form id="contact-form">
+            <div class="relative flex flex-col md:flex-row justify-center gap-7">
+                <input type="email" placeholder="Seu email"
+                    class="bg-[#D9D9D9] w-[265px] h-[66px] text-[#464646]  text-xl  px-16 rounded-2xl" required />
+                <img class="absolute top-3.5 md:top-6 left-4 w-[25px] h-[18.75px]" src="./img/email.png"
+                    alt="icone de email" />
+                <button
+                id="submit-btn"
+                    class=" flex items-center justify-center gap-2 w-[224px] h-[66px] text-3xl text-white  rounded-xl font-bold cursor-pointer hover:brightness-125"
+                    style="background-image: linear-gradient(to right, var(--color-textOne), var(--color-textTwo), var(--color-textThree));">
+
+                    <img id="submit-icon" class="hidden" src="./img/loading.svg" alt="loading vetor">
+                    <span id="submit-text">Inscrever-se</span>
+                    <img id="submit-check" class="hidden" src="./img/check.svg" alt="loading check">
+                </button>
+            </div>
+        </form>
+        <p class="message text-white text-2xl" id="message"></p>
+        <p class="text-[#4A4A4A]">Sem spam. Cancele a inscrição quando quiser.</p>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
